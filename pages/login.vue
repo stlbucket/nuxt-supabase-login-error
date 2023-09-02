@@ -9,7 +9,10 @@ const signInWithOtp = async () => {
       emailRedirectTo: 'http://localhost:3000/confirm',
     }
   })
-  if (error) console.log(error)
+  if (error) {
+    console.log(error)
+    alert(error)
+  }
 }
 </script>
 <template>
